@@ -1,14 +1,20 @@
 # Expense Tracker
 
-A responsive web application built with **React** and **JavaScript** for tracking daily income and expenses. The app allows users to add, view, and delete transactions in real-time, with data persistently stored in local storage.
+A responsive web application to track income and expenses in real-time.
 
-## Features
+## 🔧 Features
 
 - Add and delete income/expense transactions
-- Calculate total balance, income, and expenses
-- State management with React Hooks and Context API
-- Persistent storage using browser local storage
-- Clean and responsive UI
+- Calculate total balance, income, and expense
+- Data persistence using browser local storage
+- Clean and user-friendly interface
+
+## 💻 Tech Stack
+
+- **React**
+- **JavaScript**
+- **HTML/CSS**
+- **LocalStorage**
 
 ## Installation
 
@@ -29,5 +35,4 @@ A responsive web application built with **React** and **JavaScript** for trackin
 4. To build for production:
    npm run build
  
-(https://github.com/Sonali-b23/Expense-Tracker)
 
