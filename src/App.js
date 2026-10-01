@@ -4,6 +4,8 @@ import { Balance } from './components/Balance';
 import { IncomeExpenses } from './components/IncomeExpenses';
 import { TransactionList } from './components/TransactionList';
 import { AddTransaction } from './components/AddTransaction';
+import { BudgetAlerts } from './components/BudgetAlerts';
+import { BudgetSettings } from './components/BudgetSettings';
 import { GlobalProvider, GlobalContext } from './context/GlobalState';
 
 import './App.css';
@@ -19,10 +21,12 @@ function AppContent() {
     <>
       <Header />
       <div className="container">
+        <BudgetAlerts />
         <Balance />
         <IncomeExpenses />
         <TransactionList />
         <AddTransaction />
+        <BudgetSettings />
       </div>
     </>
   );
