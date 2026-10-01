@@ -20,6 +20,20 @@ const AppReducer = (state, action) => {
         ...state,
         filter: action.payload
       }
+    case 'SET_CATEGORY_BUDGET': {
+      const { category, limit } = action.payload;
+      const categoryBudgets = { ...state.categoryBudgets };
+      const value = Number(limit);
+      if (limit !== '' && Number.isFinite(value) && value > 0) {
+        categoryBudgets[category] = value;
+      } else {
+        delete categoryBudgets[category];
+      }
+      return {
+        ...state,
+        categoryBudgets
+      }
+    }
     default:
       return state;
   }

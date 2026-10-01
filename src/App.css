@@ -433,3 +433,67 @@ input[type='date']:focus {
     font-size: 11px;
   }
 }
+
+.form-control select {
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  display: block;
+  font-size: 17px;
+  padding: 14px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: var(--glass-bg);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.budget-alerts {
+  margin-bottom: 16px;
+}
+
+.budget-alert {
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  border-left: 6px solid;
+}
+
+.budget-alert.warning {
+  background: rgba(253, 203, 110, 0.35);
+  border-color: #e17055;
+  color: var(--text-color);
+}
+
+.budget-alert.exceeded {
+  background: rgba(214, 48, 49, 0.18);
+  border-color: var(--danger-color);
+  color: var(--text-color);
+}
+
+.budget-row {
+  margin-bottom: 8px;
+}
+
+.budget-row label {
+  margin: 10px 0 6px;
+}
+
+.budget-row input[type='number'] {
+  margin-bottom: 4px;
+}
+
+.budget-summary {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.budget-summary.warning {
+  color: #e17055;
+}
+
+.budget-summary.exceeded {
+  color: var(--danger-color);
+  font-weight: 700;
+}

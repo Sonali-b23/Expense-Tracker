@@ -25,7 +25,7 @@ export const Transaction = ({ transaction }) => {
     <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
       <div className="transaction-main">
         <span className="transaction-text">{transaction.text}</span>
-        <span className="transaction-date">{transaction.date}</span>
+        <span className="transaction-date">{transaction.date} · {transaction.category || 'Other'}</span>
       </div>
       <span>{sign}{moneyFormatter(transaction.amount)}</span>
       <button onClick={() => deleteTransaction(transaction.id)} className="delete-btn">x</button>
